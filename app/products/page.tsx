@@ -14,6 +14,8 @@ import {
   Sliders,
   Maximize2,
 } from "lucide-react";
+import ProductCatalog from "@/components/products/ProductCatalog";
+import CertificationsStrip from "@/components/products/CertificationsStrip";
 
 export const metadata: Metadata = {
   title: "Our Product Range | Fashion Home Sourcing",
@@ -468,7 +470,13 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* ── 6. Sourcing Lab Inquiry CTA Banner (from docs/content/products.md) ── */}
+      {/* ── 6. Finished Products Showcase (26 Real Products with Filters & View More) ── */}
+      <ProductCatalog />
+
+      {/* ── 7. Global Certifications Strip ── */}
+      <CertificationsStrip />
+
+      {/* ── 8. Sourcing Lab Inquiry CTA Banner (from docs/content/products.md) ── */}
       <section className="py-16 sm:py-20 text-white" style={{ backgroundColor: "#0B1B33" }}>
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div
