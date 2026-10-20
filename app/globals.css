@@ -34,8 +34,17 @@ html { scroll-behavior: smooth; }
   transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
 }
-.flip-card:hover .flip-inner,
-.flip-card.flipped .flip-inner {
+
+/* Hover flip on desktop/mouse devices */
+@media (hover: hover) and (pointer: fine) {
+  .flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Flip on tap/click for mobile and explicit toggling */
+.flip-card.flipped .flip-inner,
+.flip-inner.flipped {
   transform: rotateY(180deg);
 }
 .flip-front,

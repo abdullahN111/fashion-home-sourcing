@@ -95,7 +95,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#C59B27" }} />
                 <a href="mailto:marketing@fashionhomesourcing.net"
-                  className="text-sm text-white/60 hover:text-white transition-colors">
+                  className="text-sm text-white/60 hover:text-white transition-colors break-all">
                   marketing@fashionhomesourcing.net
                 </a>
               </li>

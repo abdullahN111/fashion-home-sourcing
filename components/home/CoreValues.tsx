@@ -70,9 +70,8 @@ function FlipCard({
 
   return (
     <div
-      className="flip-card h-[500px] cursor-pointer select-none"
+      className={`flip-card h-[500px] cursor-pointer select-none ${flipped ? "flipped" : ""}`}
       onClick={() => setFlipped(f => !f)}
-      onMouseEnter={() => setFlipped(true)}
       onMouseLeave={() => setFlipped(false)}
       aria-label={`${title} – click to flip`}
       tabIndex={0}
@@ -116,9 +115,16 @@ function FlipCard({
           {/* Micro flip hint */}
           <div className="w-full pt-3 border-t border-[#0B1B33]/10 flex items-center justify-between text-[11px] font-medium" style={{ color: "#C59B27" }}>
             <span>Core Commitment</span>
-            <span className="inline-flex items-center gap-1 opacity-80">
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setFlipped(true);
+              }}
+              className="inline-flex items-center gap-1 opacity-80 hover:opacity-100 cursor-pointer"
+            >
               Flip to see highlights ↻
-            </span>
+            </button>
           </div>
         </div>
 
@@ -157,7 +163,16 @@ function FlipCard({
 
           <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-[#C59B27]">
             <span>Trusted Excellence</span>
-            <span>Click to flip back ↺</span>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setFlipped(false);
+              }}
+              className="inline-flex items-center gap-1 text-[#C59B27] hover:underline cursor-pointer font-medium"
+            >
+              Click to flip back ↺
+            </button>
           </div>
         </div>
 

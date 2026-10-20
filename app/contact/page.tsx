@@ -123,7 +123,7 @@ export default function ContactPage() {
 
               {/* Office & Factory Info Card */}
               <div
-                className="rounded-3xl p-6 sm:p-8 shadow-lg bg-white"
+                className="rounded-3xl p-5 sm:p-8 shadow-lg bg-white"
                 style={{ border: "2px solid #C59B27" }}
               >
                 <div className="mb-6">
@@ -148,7 +148,7 @@ export default function ContactPage() {
                     >
                       <MapPin size={22} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="text-xs font-bold uppercase tracking-wider text-[#0B1B33]/60 mb-0.5">
                         Office Location
                       </div>
@@ -169,13 +169,13 @@ export default function ContactPage() {
                     >
                       <Mail size={22} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="text-xs font-bold uppercase tracking-wider text-[#0B1B33]/60 mb-0.5">
                         Sales &amp; Sourcing
                       </div>
                       <a
                         href="mailto:marketing@fashionhomesourcing.net"
-                        className="text-sm font-semibold text-[#0B1B33] hover:text-[#C59B27] transition-colors block"
+                        className="text-[13px] sm:text-sm font-semibold text-[#0B1B33] hover:text-[#C59B27] transition-colors block break-all"
                       >
                         marketing@fashionhomesourcing.net
                       </a>
@@ -190,13 +190,13 @@ export default function ContactPage() {
                     >
                       <PhoneCall size={22} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="text-xs font-bold uppercase tracking-wider text-[#0B1B33]/60 mb-0.5">
                         Logistics &amp; Support
                       </div>
                       <a
                         href="mailto:marketing@fashionhomesourcing.net"
-                        className="text-sm font-semibold text-[#0B1B33] hover:text-[#C59B27] transition-colors block"
+                        className="text-[13px] sm:text-sm font-semibold text-[#0B1B33] hover:text-[#C59B27] transition-colors block break-all"
                       >
                         marketing@fashionhomesourcing.net
                       </a>
@@ -214,7 +214,7 @@ export default function ContactPage() {
                     >
                       <Clock size={22} />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="text-xs font-bold uppercase tracking-wider text-[#0B1B33]/60 mb-0.5">
                         Availability
                       </div>
