@@ -87,7 +87,7 @@ export default function ContactForm() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={`mailto:ak8757796@gmail.com?subject=Sourcing RFQ: ${encodeURIComponent(
+              href={`mailto:marketing@fashionhomesourcing.net?subject=Sourcing RFQ: ${encodeURIComponent(
                 formData.category
               )} - ${encodeURIComponent(formData.companyName)}&body=Full Name: ${encodeURIComponent(
                 formData.fullName

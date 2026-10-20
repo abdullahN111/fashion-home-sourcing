@@ -3,9 +3,9 @@ import Image from "next/image";
 import { Mail, MapPin, Clock } from "lucide-react";
 
 const quickLinks = [
-  { label: "Home",       href: "/" },
-  { label: "Products",   href: "/products" },
-  { label: "About Us",   href: "/about" },
+  { label: "Home", href: "/" },
+  { label: "Products", href: "/products" },
+  { label: "About Us", href: "/about" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -94,18 +94,18 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Mail size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#C59B27" }} />
-                <a href="mailto:info@fashionhome.pk"
+                <a href="mailto:marketing@fashionhomesourcing.net"
                   className="text-sm text-white/60 hover:text-white transition-colors">
-                  info@fashionhome.pk
+                  marketing@fashionhomesourcing.net
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#C59B27" }} />
-                <span className="text-sm text-white/60">Industrial Area, Karachi, Pakistan</span>
+                <span className="text-sm text-white/60">Metrovile Site Area Branch - Sector-1 Karachi</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#C59B27" }} />
-                <span className="text-sm text-white/60">Mon – Fri | 9:00 AM – 6:00 PM (PKT)</span>
+                <span className="text-sm text-white/60">24/7 available for your service</span>
               </li>
             </ul>
           </div>

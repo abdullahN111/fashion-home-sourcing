@@ -435,7 +435,7 @@ export default function AboutPage() {
                 Share your query <ArrowRight size={16} />
               </Link>
               <a
-                href="mailto:ak8757796@gmail.com"
+                href="mailto:marketing@fashionhomesourcing.net"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border px-8 py-3.5 text-sm font-semibold text-white transition-all hover:border-[#C59B27] hover:bg-[#C59B27]/15"
                 style={{ borderColor: "rgba(197,155,39,0.6)" }}
               >

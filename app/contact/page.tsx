@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact Us | Start Your Sourcing Order | Fashion Home Sourcing",
   description:
-    "Reach out for bulk fabric quotes, sample swatches, or supplier partnerships. Based in Korangi Industrial Area, Karachi, Pakistan.",
+    "Reach out for bulk fabric quotes, sample swatches, or supplier partnerships. Based in Metrovile Site Area Branch - Sector-1 Karachi, Pakistan.",
 };
 
 const sourcingPerks = [
@@ -153,7 +153,7 @@ export default function ContactPage() {
                         Office Location
                       </div>
                       <div className="text-sm font-semibold text-[#0B1B33] leading-snug">
-                        Korangi Industrial Area, Karachi, Pakistan
+                        Metrovile Site Area Branch - Sector-1 Karachi
                       </div>
                       <div className="text-xs text-[#0B1B33]/55 mt-1">
                         Minutes from major shipping terminals and textile mills.
@@ -174,16 +174,10 @@ export default function ContactPage() {
                         Sales &amp; Sourcing
                       </div>
                       <a
-                        href="mailto:sales@fashionhome.pk"
+                        href="mailto:marketing@fashionhomesourcing.net"
                         className="text-sm font-semibold text-[#0B1B33] hover:text-[#C59B27] transition-colors block"
                       >
-                        sales@fashionhome.pk
-                      </a>
-                      <a
-                        href="mailto:ak8757796@gmail.com"
-                        className="text-xs font-medium text-[#C59B27] hover:underline mt-0.5 block"
-                      >
-                        Direct: ak8757796@gmail.com
+                        marketing@fashionhomesourcing.net
                       </a>
                     </div>
                   </div>
@@ -201,10 +195,10 @@ export default function ContactPage() {
                         Logistics &amp; Support
                       </div>
                       <a
-                        href="mailto:support@fashionhome.pk"
+                        href="mailto:marketing@fashionhomesourcing.net"
                         className="text-sm font-semibold text-[#0B1B33] hover:text-[#C59B27] transition-colors block"
                       >
-                        support@fashionhome.pk
+                        marketing@fashionhomesourcing.net
                       </a>
                       <div className="text-xs text-[#0B1B33]/55 mt-0.5">
                         Container booking, bill of lading &amp; tracking.
@@ -222,13 +216,13 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-wider text-[#0B1B33]/60 mb-0.5">
-                        Working Hours
+                        Availability
                       </div>
                       <div className="text-sm font-semibold text-[#0B1B33]">
-                        Monday to Friday, 9:00 AM – 6:00 PM PKT
+                        24/7 available for your service
                       </div>
                       <div className="text-xs text-[#0B1B33]/55 mt-0.5">
-                        Time Zone: UTC+05:00 (Pakistan Standard Time)
+                        Fast turnaround across all international time zones.
                       </div>
                     </div>
                   </div>

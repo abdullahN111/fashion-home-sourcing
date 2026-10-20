@@ -107,7 +107,7 @@ export default function HeroCarousel() {
             {/* CTAs */}
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5 }}
               className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <a href="mailto:ak8757796@gmail.com" id="hero-contact-button"
+              <a href="mailto:marketing@fashionhomesourcing.net" id="hero-contact-button"
                 className="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:brightness-110 active:scale-95"
                 style={{ backgroundColor: "#C59B27" }}>
                 <Mail size={16} /> Contact

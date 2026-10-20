@@ -24,8 +24,8 @@
   - About Us (`/about`)
   - Contact Us (`/contact`)
 - Column 3: Contact Details
-  - Email: `info@fashionhome.pk` (or your client's email)
-  - Address: Industrial Area, Karachi, Pakistan
-  - Direct Inquiry: Mon - Fri | 9:00 AM - 6:00 PM (PKT)
+  - Email: `marketing@fashionhomesourcing.net`
+  - Address: Metrovile Site Area Branch - Sector-1 Karachi
+  - Direct Inquiry: 24/7 available for your service
 - Bottom Bar:
   - "© 2026 Fashion Home. All Rights Reserved."
