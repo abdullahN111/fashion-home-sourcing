@@ -20,7 +20,7 @@ import CertificationsStrip from "@/components/products/CertificationsStrip";
 export const metadata: Metadata = {
   title: "Our Product Range | Fashion Home Sourcing",
   description:
-    "Explore our engineered fabrics and finished garments, including workwear, premium woven textiles, 5-star hotel linens, and GOTS-certified organic ranges.",
+    "Explore our export textile collection, including luxury bath towels, hospitality bathrobes, commercial kitchen linens, and thermal bedding.",
 };
 
 const technicalSpecs = [
@@ -52,72 +52,72 @@ const technicalSpecs = [
 
 const productCategories = [
   {
-    id: "workwear",
-    title: "Workwear & Protective Textiles",
-    badge: "Industrial & Safety Compliance",
+    id: "bath-towels",
+    title: "Luxury Bath & Institutional Towels",
+    badge: "Hospitality & Spa Terry",
     badgeColor: "#C59B27",
     description:
-      "Flame retardant, oil-repellent, high-visibility, and anti-static utility uniforms engineered for extreme resilience and occupational safety.",
-    applications: [
-      "Industrial safety & manufacturing",
-      "Mining & offshore oil operations",
-      "Hospital scrubs & medical barrier garments",
-      "Tactical & security apparel",
-    ],
-    specs: ["Flame Retardant (FR)", "Oil & Water Repellent", "High-Visibility Strips", "Anti-Static Finish"],
-    imageSrc: "/assets/prod-workwear.jpg",
-    imageAlt: "Heavy-duty industrial workwear jackets with reflective strips",
-  },
-  {
-    id: "woven",
-    title: "Premium Woven Fabrics",
-    badge: "Apparel & Shirting Weaves",
-    badgeColor: "#C59B27",
-    description:
-      "Greige and finished fabrics manufactured in precision plain, twill, satin, dobby, and intricate jacquard weaves with rich colorfastness.",
-    applications: [
-      "Luxury formal shirting & blouses",
-      "Tailored suiting & casual trousers",
-      "Seasonal lightweight fashion apparel",
-      "Specialty pocketing and lining fabrics",
-    ],
-    specs: ["Plain, Twill & Satin Weaves", "Mercerized Luster Finish", "Reactive Dyeing", "Custom Yarn Counts"],
-    imageSrc: "/assets/prod-woven.jpg",
-    imageAlt: "Luxury rolls of draped twill, satin, and jacquard woven fabrics",
-  },
-  {
-    id: "home-textiles",
-    title: "Institutional & Home Textiles",
-    badge: "Hospitality & Retail Living",
-    badgeColor: "#C59B27",
-    description:
-      "Luxury percale and satin sheet sets, plush Terry velour towels, and institutional bedding crafted for exceptional softness and wash endurance.",
+      "Plush hotel collection towels, zero-twist spa towels, reactive-dyed viscose borders, and institutional grade towels engineered for commercial laundering.",
     applications: [
       "5-star luxury hotels & resorts",
       "Executive wellness spas & retreats",
-      "Retail department store collections",
-      "Institutional healthcare bedding",
+      "Commercial accommodation chains",
+      "Institutional healthcare facilities",
     ],
-    specs: ["300TC to 1000TC Satin Sheets", "Double-Stitched Terry Hemming", "Bleach-Safe Chlorine Resistance", "Zero-Twist Softness"],
-    imageSrc: "/assets/hero-slide1.jpg",
-    imageAlt: "Luxury folded plush towel stacks and institutional navy bedding",
+    specs: ["400 to 650 GSM Density", "100% Combed Cotton", "Double-Stitched Hemming", "Bleach & Chlorine Safe"],
+    imageSrc: "/assets/products/hotel-towels.jfif",
+    imageAlt: "Luxury hotel collection bath towels with dobby border",
   },
   {
-    id: "sustainable",
-    title: "Sustainable & Organic Range",
-    badge: "Eco-Certified & Circular",
+    id: "bathrobes",
+    title: "Hospitality Bathrobes & Spa Wear",
+    badge: "Executive Spa & Resort Wear",
     badgeColor: "#C59B27",
     description:
-      "GOTS-certified organic cotton, recycled polyester (rPET) fibers, and closed-loop water-saving dye processes supporting circular fashion.",
+      "Plush sheared terry velour, full terry kimono robes, and lightweight honeycomb waffle bathrobes tailored for private label luxury resorts and day spas.",
     applications: [
-      "Eco-conscious lifestyle & casual wear",
-      "Sustainable hotel guest amenities",
-      "Biodegradable retail home textiles",
-      "Reusable organic textile packaging",
+      "Luxury resort & boutique suites",
+      "Thermal wellness spas & day retreats",
+      "VIP executive lounge amenities",
+      "Private label retail loungewear",
     ],
-    specs: ["GOTS Certified Organic Cotton", "Recycled Polyester (rPET)", "OEKO-TEX Standard 100", "Low-Impact Reactive Dyes"],
-    imageSrc: "/assets/service-design.jpg",
-    imageAlt: "Organic fabric rolls, sustainable swatch swatches, and eco-textiles",
+    specs: ["Terry Velour / Full Terry Weaves", "Honeycomb Waffle Breathability", "Reinforced Seams & Patch Pockets", "Custom Sizing & Embroidery"],
+    imageSrc: "/assets/products/terry-velour-bathrobe.jfif",
+    imageAlt: "Luxury terry velour and kimono bathrobes",
+  },
+  {
+    id: "kitchen-linens",
+    title: "Commercial Kitchen & Bar Linens",
+    badge: "Food Service & Hospitality",
+    badgeColor: "#C59B27",
+    description:
+      "Heavy-duty cotton herringbone dish towels, high-absorbency poly-weft towels, and color-coded commercial bar mops built for high-traffic food service.",
+    applications: [
+      "Commercial restaurant kitchens",
+      "Bar & beverage stations (HACCP hygiene)",
+      "Catering & banquet operations",
+      "Retail kitchenware & tabletop",
+    ],
+    specs: ["Lint-Free Herringbone Weaves", "Poly-Weft Grease Absorbency", "Color-Coded Sanitation Stripes", "High-Temperature Boil Washable"],
+    imageSrc: "/assets/products/kitchen-towels.jfif",
+    imageAlt: "Commercial kitchen dish towels and bar mops",
+  },
+  {
+    id: "thermal-bedding",
+    title: "Thermal Blankets & Sustainable Range",
+    badge: "Pediatric & Institutional Care",
+    badgeColor: "#C59B27",
+    description:
+      "100% cotton open-cell baby thermal blankets, snag-free institutional hotel blankets, unbleached eco-flannels, and GOTS-certified organic cotton.",
+    applications: [
+      "Pediatric & neonatal hospital care",
+      "Hotel thermal layering blankets",
+      "Eco-conscious lifestyle bedding",
+      "Medical & hospice bedding",
+    ],
+    specs: ["Open-Cell Leno Weave", "Snag-Free Industrial Construction", "100% Natural Unbleached Cotton", "GOTS & OEKO-TEX Certified"],
+    imageSrc: "/assets/products/baby-thermal-blanket.jfif",
+    imageAlt: "100% cotton baby thermal blankets and institutional blankets",
   },
 ];
 
@@ -298,8 +298,8 @@ export default function ProductsPage() {
                     <ChevronsRight size={18} strokeWidth={2.5} />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-[#0B1B33]">Narrow Width Fabrics for Work Wear and Technical Industry</h3>
-                    <p className="text-xs text-[#0B1B33]/60 mt-0.5">High-tenacity twills, rip-stop weaves, and protective anti-static fabrics tested for industrial uniforms.</p>
+                    <h3 className="text-base font-bold text-[#0B1B33]">Specialty Terry &amp; Dobby Weaves for Bath &amp; Kitchen</h3>
+                    <p className="text-xs text-[#0B1B33]/60 mt-0.5">High-absorbency ring-spun loops, popcorn textures, and reinforced selvedges tested for commercial hospitality laundering.</p>
                   </div>
                 </div>
 

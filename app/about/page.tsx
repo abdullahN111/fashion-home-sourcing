@@ -15,6 +15,7 @@ import {
   Ruler,
   ClipboardCheck,
 } from "lucide-react";
+import LeaderPhoto from "@/components/common/LeaderPhoto";
 
 export const metadata: Metadata = {
   title: "About Us | Fashion Home Sourcing",
@@ -117,7 +118,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
 
-            {/* Left: Founder & Facility Photo Frame (5 cols) */}
+            {/* Left: Founder Photo Frame (5 cols - kept blank until real CEO photo is added) */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-md">
                 {/* Background accent frame */}
@@ -126,33 +127,10 @@ export default function AboutPage() {
                   style={{ border: "2px solid #C59B27", backgroundColor: "rgba(197,155,39,0.08)" }}
                 />
 
-                <div
-                  className="relative h-[440px] sm:h-[480px] w-full overflow-hidden rounded-3xl shadow-2xl"
-                  style={{ border: "2px solid #C59B27" }}
-                >
-                  <Image
-                    src="/assets/founder.jpg"
-                    alt="Founder and Textile Director of Fashion Home Sourcing"
-                    fill
-                    className="object-cover object-top"
-                    unoptimized
-                  />
-                  {/* Bottom overlay badge */}
-                  <div
-                    className="absolute bottom-4 left-4 right-4 rounded-2xl p-4 backdrop-blur-md"
-                    style={{
-                      backgroundColor: "rgba(11,27,51,0.9)",
-                      border: "1px solid rgba(197,155,39,0.4)",
-                    }}
-                  >
-                    <div className="text-xs uppercase tracking-wider font-semibold text-[#C59B27]">
-                      Established Sourcing Bridge
-                    </div>
-                    <div className="text-sm font-bold text-white mt-0.5">
-                      Direct Hub in Karachi, Pakistan
-                    </div>
-                  </div>
-                </div>
+                <LeaderPhoto
+                  className="h-[440px] sm:h-[480px] w-full"
+                  showOverlay={true}
+                />
               </div>
             </div>
 

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import LeaderPhoto from "@/components/common/LeaderPhoto";
 
 export default function FounderStory() {
   return (
@@ -9,7 +9,7 @@ export default function FounderStory() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
 
-          {/* Left – portrait with geometric accent */}
+          {/* Left – portrait with geometric accent (kept blank until real CEO photo is added) */}
           <div className="relative flex justify-center lg:justify-end">
             {/* Geometric background accent */}
             <div className="absolute -left-6 -top-6 h-64 w-64 rounded-full opacity-15"
@@ -17,16 +17,8 @@ export default function FounderStory() {
             <div className="absolute -bottom-6 -right-6 h-48 w-48 rounded-full opacity-10"
               style={{ backgroundColor: "#0B1B33" }} aria-hidden="true" />
 
-            <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl"
-              style={{ border: "3px solid #C59B27" }}>
-              <Image
-                src="/assets/founder.jpg"
-                alt="Fashion Home Sourcing Founder"
-                width={360}
-                height={480}
-                className="object-cover object-top"
-                unoptimized
-              />
+            <div className="relative z-10 w-full max-w-[360px]">
+              <LeaderPhoto showOverlay={false} className="h-[440px] sm:h-[480px] w-full" />
             </div>
           </div>
 
