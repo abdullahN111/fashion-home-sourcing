@@ -27,16 +27,27 @@ export default function Footer() {
 
           {/* Column 1 – Brand */}
           <div className="space-y-4">
-            <Link href="/" className="inline-block">
-              <Image
-                src="/assets/logo.png"
-                alt="Fashion Home Sourcing"
-                width={140}
-                height={40}
-                style={{ height: 40, width: "auto" }}
-                className="object-contain brightness-0 invert"
-                unoptimized
-              />
+            <Link href="/" className="inline-flex items-center gap-3.5 group">
+              <div
+                className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-full p-1 shadow-lg bg-white transition-transform duration-300 group-hover:scale-105 flex-shrink-0"
+                style={{ border: "2px solid #C59B27" }}
+              >
+                <Image
+                  src="/assets/logo.png"
+                  alt="Fashion Home Sourcing"
+                  fill
+                  className="object-contain p-0.5"
+                  unoptimized
+                />
+              </div>
+              <div>
+                <span className="block text-base font-bold text-white tracking-wide">
+                  Fashion Home Sourcing
+                </span>
+                <span className="block text-xs uppercase tracking-wider" style={{ color: "#C59B27" }}>
+                  Global Textile Exporter
+                </span>
+              </div>
             </Link>
             <p className="text-sm leading-relaxed text-white/60">
               A premier global textile manufacturing and sourcing partner delivering woven,

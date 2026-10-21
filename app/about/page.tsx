@@ -82,8 +82,26 @@ export default function AboutPage() {
           }}
         />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <nav className="mb-6 flex justify-center text-xs tracking-wider uppercase text-white/50">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+          {/* Prominent Brand Logo Badge */}
+          <div
+            className="mb-5 relative h-24 w-24 sm:h-28 sm:w-28 rounded-full p-1.5 shadow-2xl transition-transform duration-300 hover:scale-105"
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.96)",
+              border: "2.5px solid #C59B27",
+              boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(197, 155, 39, 0.35)",
+            }}
+          >
+            <Image
+              src="/assets/logo.png"
+              alt="Fashion Home Sourcing Logo"
+              fill
+              className="object-contain p-1"
+              unoptimized
+            />
+          </div>
+
+          <nav className="mb-4 flex justify-center text-xs tracking-wider uppercase text-white/50">
             <Link href="/" className="hover:text-[#C59B27] transition-colors">
               Home
             </Link>

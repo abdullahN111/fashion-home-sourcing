@@ -6,9 +6,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home",       href: "/" },
-  { label: "Products",   href: "/products" },
-  { label: "About Us",   href: "/about" },
+  { label: "Home", href: "/" },
+  { label: "Products", href: "/products" },
+  { label: "About Us", href: "/about" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -26,8 +26,8 @@ export default function Header() {
           <Image
             src="/assets/logo.png"
             alt="Fashion Home Sourcing"
-            width={140}
-            height={40}
+            width={150}
+            height={50}
             style={{ height: 40, width: "auto" }}
             className="object-contain"
             unoptimized
