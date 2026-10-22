@@ -15,6 +15,7 @@ export default function ContactForm() {
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -22,15 +23,52 @@ export default function ContactForm() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMessage("");
 
-    // Simulate swift inquiry dispatch
-    setTimeout(() => {
+    try {
+      const accessKey =
+        process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "95e84828-2a9c-469d-b97e-3d938bb2070c";
+
+      const payload = {
+        access_key: accessKey,
+        subject: `New Sourcing RFQ: ${formData.category} - ${formData.companyName}`,
+        from_name: "Fashion Home Sourcing Website",
+        replyto: formData.email,
+        "Buyer Full Name": formData.fullName,
+        "Company / Organization": formData.companyName,
+        "Business Email": formData.email,
+        "Product Category": formData.category,
+        "Order Quantity": formData.quantity,
+        "Specifications & Notes": formData.specifications,
+        botcheck: "",
+      };
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setErrorMessage(
+          data.message || "Unable to send inquiry right now. Please try again or use direct email."
+        );
+      }
+    } catch {
+      setErrorMessage("Network connection error. Please try again or email marketing@fashionhomesourcing.net directly.");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 700);
+    }
   };
 
   const resetForm = () => {
@@ -43,6 +81,7 @@ export default function ContactForm() {
       specifications: "",
     });
     setSubmitted(false);
+    setErrorMessage("");
   };
 
   return (
@@ -78,11 +117,11 @@ export default function ContactForm() {
           </div>
 
           <h3 className="text-xl font-bold text-[#0B1B33] mb-2">
-            Inquiry Submitted Successfully!
+            Inquiry Delivered to Fashion Home Desk!
           </h3>
 
           <p className="text-xs sm:text-sm text-[#0B1B33]/75 max-w-md mx-auto mb-6 leading-relaxed">
-            Thank you, <span className="font-semibold text-[#0B1B33]">{formData.fullName || "Partner"}</span>. We have logged your request for <span className="font-semibold text-[#0B1B33]">{formData.category} fabrics</span> ({formData.quantity || "bulk quantity"}). A senior fabric merchandiser will contact you at <span className="font-semibold text-[#0B1B33]">{formData.email}</span> shortly.
+            Thank you, <span className="font-semibold text-[#0B1B33]">{formData.fullName || "Partner"}</span>. Your sourcing request for <span className="font-semibold text-[#0B1B33]">{formData.category}</span> ({formData.quantity || "bulk quantity"}) has been dispatched to <span className="font-semibold text-[#0B1B33]">marketing@fashionhomesourcing.net</span>. Our merchandising team will respond to <span className="font-semibold text-[#0B1B33]">{formData.email}</span> shortly.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -114,6 +153,12 @@ export default function ContactForm() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5">
+          {errorMessage && (
+            <div className="flex items-center gap-2.5 rounded-xl border border-rose-200 bg-rose-50 p-4 text-xs font-medium text-rose-700">
+              <AlertCircle size={18} className="flex-shrink-0" />
+              <span>{errorMessage}</span>
+            </div>
+          )}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
             {/* Full Name */}
