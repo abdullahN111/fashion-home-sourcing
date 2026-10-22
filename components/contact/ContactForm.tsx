@@ -34,15 +34,17 @@ export default function ContactForm() {
 
       const payload = {
         access_key: accessKey,
-        subject: `New Sourcing RFQ: ${formData.category} - ${formData.companyName}`,
-        from_name: "Fashion Home Sourcing Website",
+        subject: `[New RFQ Lead] ${formData.category} — ${formData.companyName}${
+          formData.quantity ? ` (${formData.quantity})` : ""
+        }`,
+        from_name: "Fashion Home Sourcing | Inquiry Desk",
         replyto: formData.email,
-        "Buyer Full Name": formData.fullName,
-        "Company / Organization": formData.companyName,
-        "Business Email": formData.email,
-        "Product Category": formData.category,
-        "Order Quantity": formData.quantity,
-        "Specifications & Notes": formData.specifications,
+        "1. Buyer Full Name": formData.fullName,
+        "2. Company / Brand": formData.companyName,
+        "3. Buyer Email (Click Reply to respond)": formData.email,
+        "4. Product Category": formData.category,
+        "5. Estimated Order Quantity": formData.quantity || "Not specified",
+        "6. Technical Specifications & Requirements": formData.specifications,
         botcheck: "",
       };
 
